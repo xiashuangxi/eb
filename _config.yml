@@ -1,0 +1,3 @@
+markdown: kramdown
+highlighter: rouge
+data_dir: data
