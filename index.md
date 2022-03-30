@@ -1,1 +1,5 @@
-This Eb Index.html
+---
+layout: default
+---
+
+This is Main.md
