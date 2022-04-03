@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="" />
 	</head>
     <body>
+    	{{ content }}
     </body>
 	<script src="/pkb/assets/scripts/lib/dblclick.js"></script>
 </html>

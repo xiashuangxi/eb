@@ -1,3 +1,4 @@
 markdown: kramdown
 highlighter: rouge
 data_dir: data
+post_dir: content
