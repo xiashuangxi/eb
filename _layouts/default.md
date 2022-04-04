@@ -13,6 +13,7 @@
     	{{ content }}
     </body>
 	
+	{{site.data}}
     {{site.data.classification}}
 
 
