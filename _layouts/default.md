@@ -12,5 +12,8 @@
     <body>
     	{{ content }}
     </body>
-	<script src="/pkb/assets/scripts/lib/dblclick.js"></script>
+	
+    {{site.date.classification}}
+
+
 </html>

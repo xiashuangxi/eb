@@ -1,0 +1,108 @@
+- code: A
+  name: 马克思主义、列宁主义、毛泽东思想、邓小平理论
+- code: B
+  name: 哲学、宗教
+- code: C
+  name: 社会科学总论
+- code: D
+  name: 政治、法律
+- code: E
+  name: 军事
+- code: F
+  name: 经济
+- code: G
+  name: 文化、科学、教育、体育
+- code: H
+  name: 语言、文字
+- code: I
+  name: 文学
+- code: J
+  name: 艺术
+- code: K
+  name: 历史、地理
+- code: N
+  name: 自然科学总论
+- code: O
+  name: 数理科学和化学
+- code: P
+  name: 天文学、地球科学
+- code: Q
+  name: 生物科学
+- code: R
+  name: 医药、卫生
+- code: S
+  name: 农业科学
+- code: T
+  name: 工业技术
+- code: U
+  name: 交通运输
+- code: V
+  name: 航空、航天
+- code: X
+  name: 环境科学、安全科学
+- code: Z
+  name: 综合性图书
+  item:
+    - code: Z1
+      name: 丛书
+      item:
+        - code: Z12
+          name: 中国丛书
+          item:
+            - code: Z121
+              name: 普通丛书（杂纂丛书）
+              item:
+                - code: Z121.2
+                  name: 宋代
+                - code: Z121.3
+                  name: 元代
+                - code: Z121.4
+                  name: 明代
+                - code: Z121.5
+                  name: 清代
+                - code: Z121.6
+                  name: 民国时代
+                - code: Z121.7
+                  name: 现代
+            - code: Z122
+              name: 地方丛书
+            - code: Z123
+              name: 族姓丛书
+            - code: Z124
+              name: 自著丛书
+            - code: Z125
+              name: 辑佚丛书
+            - code: Z126
+              name: 旧经籍
+              item:
+                - code: Z126.1
+                  name: 群经合辑
+                - code: Z126.2
+                  name: 群经总义
+                  item:
+                    - code: Z126.21
+                      name: 汇辑
+                    - code: Z126.22
+                      name: 辑佚
+                    - code: Z126.23
+                      name: 专题选辑
+                    - code: Z126.24
+                      name: 表谱、图说
+                    - code: Z126.25
+                      name: 音义、校勘
+                    - code: Z126.27
+                      name: 研究、评论、考证
+        - code: Z13/17
+          name: 各国丛书
+    - code: Z2
+      name: 百科全书、类书
+    - code: Z3
+      name: 辞典
+    - code: Z4
+      name: 论文集、全集、选集、杂著
+    - code: Z5
+      name: 年鉴、年刊
+    - code: Z6
+      name: 期刊、连续性出版物
+    - code: Z8
+      name: 图书目录、文摘、索引
