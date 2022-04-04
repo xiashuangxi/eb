@@ -14,7 +14,7 @@
 
 
 
-	{{site.data}}
+	{{site.data | jsonify}}
 
 
     </body>
