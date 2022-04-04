@@ -16,8 +16,6 @@
 
 	{{site.data}}
 
-		<hr>
-    {{site.data.classification}}
 
     </body>
 
