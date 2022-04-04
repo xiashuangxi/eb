@@ -13,7 +13,7 @@
     	{{ content }}
     </body>
 	
-    {{site.date.classification}}
+    {{site.data.classification}}
 
 
 </html>
