@@ -17,9 +17,11 @@
 		    background-color: #f6f7f8;
 		}
 
-		ul {
-			padding-left: 4px;
-    margin: 0px;
+		ul,
+		li{
+			padding-left: 5px;
+    		margin: 0px;
+    		list-style: none;
 		}
 
 		.classify {
@@ -30,6 +32,18 @@
     border-style: dashed;
     border-color: #525252;
 		}
+
+		/*.classify ul li::before{
+		  content      : '';
+		  display      : block;
+		  position     : absolute;
+		  top          : calc(var(--spacing) / -2);
+		  left         : -2px;
+		  width        : calc(var(--spacing) + 2px);
+		  height       : calc(var(--spacing) + 1px);
+		  border       : solid #ddd;
+		  border-width : 0 0 2px 2px;
+		}*/
 
 		.books {
 
@@ -68,18 +82,25 @@
 		
 	// }
 	var html = ""
-	var init_classify = function(obj) {	
+	var init_classify = function(obj,i_t) {	
 		var obj = obj.reverse();
+		var t = "ul"
 		for (var i = obj.length - 1; i >= 0; i--) {
-			html = html + "<ul class='panel'><a href='#"+obj[i].code+"'>"+obj[i].code + ' '+obj[i].name+"</a>";
-			if (obj[i].item) {
-				init_classify(obj[i].item)
+			
+			var i_s = obj[i].item? obj[i].item.length:0;
+			if (i_t == "child") {
+				t = i_s == 0 ? "li" : "ul";
 			}
-			html = html + "</ul>";
+			html = html + "<"+t+" class='panel'><a title='"+obj[i].code+" "+obj[i].name +"' href='#"+obj[i].code+"'>"+obj[i].code + ' '+obj[i].name+"</a>";
+			if (i_s > 0) {
+				init_classify(obj[i].item,"child")
+			} 
+			html = html + "</"+t+">";
+
 		}
 		
 	}
-	init_classify(JSON.parse(classify));
+	init_classify(JSON.parse(classify),"root");
 	document.getElementById("classify_content").innerHTML = html;
 
 </script>

@@ -96,13 +96,113 @@
           name: 各国丛书
     - code: Z2
       name: 百科全书、类书
+      item:
+        - code: Z22
+          name: 中国百科全书、类书
+          item:
+            - code: Z221
+              name: 唐代
+            - code: Z222
+              name: 宋代
+            - code: Z223
+              name: 元代
+            - code: Z224
+              name: 明代
+            - code: Z225
+              name: 清代
+            - code: Z226
+              name: 民国时代
+            - code: Z227
+              name: 现代
+            - code: Z228
+              name: 综合性普及读物
+              item:
+                - code: Z228.1
+                  name: 少年儿童读物
+                - code: Z228.2
+                  name: 青年读物
+                - code: Z228.3
+                  name: 中老年读物
+                - code: Z228.4
+                  name: 女性读物
+                - code: Z228.5
+                  name: 男性读物
+        - code: Z23/27
+          name: 各国百科全书
+        - code: [Z28]
+          name: 专科百科全书
     - code: Z3
       name: 辞典
+      item:
+        - code: Z32
+          name: 中国辞典
+        - code: Z33/37
+          name: 各国辞典
+        - code: [Z38]
+          name: 专科辞典
     - code: Z4
       name: 论文集、全集、选集、杂著
+      item:
+        - code: Z42
+          name: 中国论文集、全集、选集、杂著
+          item:
+            - code: Z429
+              name: 杂著
+        - code: Z43/47
+          name: 各国论文集、全集、选集、杂著
     - code: Z5
       name: 年鉴、年刊
+      item:
+        - code: Z52
+          name: 中国年鉴、年刊
+        - code: Z53/57
+          name: 各国年鉴、年刊
+        - code: [Z58]
+          name: 专科年鉴、年刊
     - code: Z6
       name: 期刊、连续性出版物
+      item:
+        - code: Z62
+          name: 中国期刊、连续性出版物
+        - code: Z63/67
+          name: 各国期刊、连续性出版物
+        - code: [Z68]
+          name: 专科期刊、连续出版物
     - code: Z8
       name: 图书目录、文摘、索引
+      item: 
+        - code: Z81
+          name: 国家总目录
+          item:
+            - code: Z812
+              name: 中国
+              item:
+                - code: Z812.1
+                  name: 全国总书目
+                - code: Z812.2
+                  name: 地方目录
+                - code: Z812.3/.6
+                  name: 各时代总目录
+            - code: Z813/817
+              name: 各国
+        - code: Z82
+          name: 图书馆藏书目录
+          item:
+            - code: Z822
+              name: 中国
+            - code: Z823/827
+              name: 各国
+        - code: Z83
+          name: 各类型目录
+        - code: Z84
+          name: 私家藏书目录
+        - code: Z85
+          name: 出版发行目录
+        - code: Z86
+          name: 个人著作目录
+        - code: Z87
+          name: 期刊目录、报纸目录
+        - code: Z88
+          name: 专科目录
+        - code: Z89
+          name: 文摘、索引
