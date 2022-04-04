@@ -11,10 +11,15 @@
 	</head>
     <body>
     	{{ content }}
-    </body>
-	
+
+
+
 	{{site.data}}
+
+		<hr>
     {{site.data.classification}}
+
+    </body>
 
 
 </html>
