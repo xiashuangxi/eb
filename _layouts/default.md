@@ -19,7 +19,7 @@
 
 		ul,
 		li{
-			padding-left: 5px;
+			padding-left: 15px;
     		margin: 0px;
     		list-style: none;
 		}
