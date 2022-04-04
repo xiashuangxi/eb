@@ -14,7 +14,11 @@
 
 
 
-	{{site.data.978-7-5201-4262-5}}
+		{{site.data.978-75201-4262-5}}
+		<hr>
+		{{site.data | replace: "=>", ":"}}
+		<hr>
+		{{ site.data | jsonify}}
 
 
     </body>
