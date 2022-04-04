@@ -17,6 +17,18 @@
 		    background-color: #f6f7f8;
 		}
 
+		a:link,
+		a:active,
+		a:visited
+		{
+			text-decoration: none;
+			color: black;
+		}
+		a:hover   {
+			background-color: black;
+			color: white;
+		}
+
 		ul,
 		li{
 			padding-left: 15px;
@@ -25,62 +37,44 @@
 		}
 
 		.classify {
-			   display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /*gap: 7px;*/
-    border-width: 1px;
-    border-style: dashed;
-    border-color: #525252;
+			display: grid;
+		    grid-template-columns: repeat(4, 1fr);
+		    /*gap: 7px;*/
+		    border-width: 1px;
+		    border-style: dashed;
+		    border-color: #525252;
+		    margin-bottom: 20px;
 		}
 
-		/*.classify ul li::before{
-		  content      : '';
-		  display      : block;
-		  position     : absolute;
-		  top          : calc(var(--spacing) / -2);
-		  left         : -2px;
-		  width        : calc(var(--spacing) + 2px);
-		  height       : calc(var(--spacing) + 1px);
-		  border       : solid #ddd;
-		  border-width : 0 0 2px 2px;
-		}*/
-
 		.books {
+			display: grid;
+		    grid-template-columns: repeat(3, 1fr);
+		    margin-bottom: 20px;
+		}
+		.books ul,
+		.books li {
+			padding: 0;
+		}
 
+		.footer {
+			text-align: center;
 		}
 	</style>
 	</head>
 	<body>
 		<div id="classify_content" class="classify"></div>
-		<div></div>
-		<div></div>
+		<div id="books" class="books"></div>
+		<div class="footer">
+			<div>© 2022 xiashuangxi@hotmail.com</div>
+			<div>本站所有数据均收集于网络</div>
+			<div>本站的分类采用的是<a href="http://clc.nlc.cn/ztfdsb.jsp">中国图书馆分类法第五版</a></div>
+		</div>
 	</body>
 
 </html>
 <script>
 	
 	var classify = '{{ site.data.classification | jsonify}}';
-	// var init_classify = function() {
-	// 	var obj = JSON.parse(classify);
-
-
-	// 	var html = ""
-	// 	var parse_item = function(it) {
-	// 		for (var i = it.length - 1; i >= 0; i--) {
-	// 			console.log(it[i])
-	// 			html = html + "<div class='panel'>"+it[i].code + ' '+it[i].name+"</div>";
-	// 		}	
-	// 	}
-
-	// 	for (var i = obj.length - 1; i >= 0; i--) {
-	// 		html = html + "<div class='panel'>"+obj[i].code + ' '+obj[i].name+"</div>";
-	// 		if (obj[i].item) {
-	// 			parse_item(obj[i].item)
-	// 		}
-	// 	}
-	// 	document.getElementById("classify_content").innerHTML = html;
-		
-	// }
 	var html = ""
 	var init_classify = function(obj,i_t) {	
 		var obj = obj.reverse();
@@ -102,5 +96,6 @@
 	}
 	init_classify(JSON.parse(classify),"root");
 	document.getElementById("classify_content").innerHTML = html;
+	document.getElementById("books").innerHTML = html;
 
 </script>
