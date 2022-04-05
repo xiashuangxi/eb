@@ -10,11 +10,10 @@
 	<style>
 		body {
 		    padding: 0;
-		    margin: 10px 20px;
+		    margin: 10px;
 		    font-size: 12px;
-		    line-height: 1.125rem;
+		    /*line-height: 1.125rem;*/
 		    font-family: 'Helvetica Neue',Helvetica,'Lucida Grande','Luxi Sans',Arial,'PingFang SC','Hiragino Sans GB',STHeiti,'Microsoft YaHei','Wenquanyi Micro Hei','WenQuanYi Micro Hei Mono','WenQuanYi Zen Hei','WenQuanYi Zen Hei Mono',LiGothicMed;
-		    background-color: #f6f7f8;
 		}
 
 		a:link,
@@ -37,14 +36,35 @@
 		}
 
 		.classify {
+			padding: 3px;
 			display: grid;
-		    grid-template-columns: repeat(4, 1fr);
-		    /*gap: 7px;*/
+		    /*grid-template-columns: repeat(4, 1fr);*/
+		    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 		    border-width: 1px;
 		    border-style: dashed;
 		    border-color: #525252;
 		    margin-bottom: 20px;
+			/*padding: 3px;
+		    position: relative;
+		    display: flex;
+		    justify-content: flex-start;
+		    flex-flow: row wrap;
+		    align-items: stretch;
+		    flex-wrap: wrap;
+
+		    border-width: 1px;
+		    border-style: dashed;
+		    border-color: #525252;
+		    margin-bottom: 20px;*/
 		}
+
+		.classify > ul {
+			padding-left: 0px;
+		}
+
+		/*.panel {
+			min-width: 300px;
+		}*/
 
 		.books {
 			display: grid;
@@ -58,6 +78,10 @@
 
 		.footer {
 			text-align: center;
+		}
+
+		sup {
+			padding: 0 4px;
 		}
 	</style>
 	</head>
@@ -73,6 +97,7 @@
 
 </html>
 <script>
+	// 实现 树 ：https://code.tutsplus.com/articles/data-structures-with-javascript-tree--cms-23393
 	
 	var classify = '{{ site.data.classification | jsonify}}';
 	var html = ""
