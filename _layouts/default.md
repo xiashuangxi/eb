@@ -82,6 +82,7 @@
 
 		.title {
 			margin: 0px 0px 10px 0px;display: grid;grid-auto-flow: column;width: 100%;
+			margin-bottom: 20px;
 		}
 		.title .title_text {
 			font-size: 25px;
@@ -141,7 +142,6 @@
 		var obj = obj.reverse();
 		var t = "ul"
 		for (var i = obj.length - 1; i >= 0; i--) {
-			
 			var i_s = obj[i].item? obj[i].item.length:0;
 			if (i_t == "child") {
 				t = i_s == 0 ? "li" : "ul";
