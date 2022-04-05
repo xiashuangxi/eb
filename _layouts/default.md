@@ -108,11 +108,15 @@
 	</style>
 	</head>
 	<body>
+<!-- 		{% capture namespace %}
+		{% if site.github.pages_hostname == 'github.io'%}/{{site.github.repository_name}}{% endif %}
+		{% endcapture %}
+		<input style="display: none;" value="{{namespace}}"> -->
 		<div class="title">
 			<div class="title_text">个人图书馆</div>
 			<div class="search_content">
 				<form onsubmit="return do_search()" submit="" method="post">
-					<input id="search_text" class="input" onkeyup="do_search()" name="input" type="text" placeholder="ISBN / 书名 / 作者 / 出版社 / 分类 / 分类代码 / 译者">
+					<input id="search_text" class="input" onchange="do_search()" name="input" type="text" placeholder="ISBN / 书名 / 作者 / 出版社 / 分类 / 分类代码 / 译者">
 					<input type="submit" class="button" value="查找" />
 				</form>
 			</div>
