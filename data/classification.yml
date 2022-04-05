@@ -1,45 +1,564 @@
 - code: A
   name: 马克思主义、列宁主义、毛泽东思想、邓小平理论
+  item:
+    - code: A1
+      name: 马克思、恩格斯著作
+    - code: A2
+      name: 列宁著作
+    - code: A3
+      name: 斯大林著作
+    - code: A4
+      name: 毛泽东著作
+    - code: A49
+      name: 邓小平著作
+    - code: A5
+      name: 马克思、恩格斯、列宁、斯大林、毛泽东、邓小平著作汇编
+    - code: A7
+      name: 马克思、恩格斯、列宁、斯大林、毛泽东、邓小平生平和传记
+    - code: A8
+      name: 马克思主义、列宁主义、毛泽东思想、邓小平理论的学习和研究
 - code: B
   name: 哲学、宗教
+  item:
+    - code: B-4
+      name: 哲学教育与普及
+    - code: B0
+      name: 哲学理论
+    - code: B1
+      name: 世界哲学
+    - code: B2
+      name: 中国哲学
+    - code: B3
+      name: 亚洲哲学
+    - code: B4
+      name: 非洲哲学
+    - code: B5
+      name: 欧洲哲学
+    - code: B6
+      name: 大洋洲哲学
+    - code: B7
+      name: 美洲哲学
+    - code: B80
+      name: 思维科学
+    - code: B81
+      name: 逻辑学（论理学）
+    - code: B82
+      name: 伦理学（道德哲学）
+    - code: B83
+      name: 美学
+    - code: B84
+      name: 心理学
+    - code: B9
+      name: 宗教
 - code: C
   name: 社会科学总论
+  item:
+    - code: C0
+      name: 社会科学理论与方法论
+    - code: C1
+      name: 社会科学现状及发展
+    - code: C2
+      name: 社会科学机构、团体、会议
+    - code: C3
+      name: 社会科学研究方法
+    - code: C4
+      name: 社会科学教育与普及
+    - code: C5
+      name: 社会科学丛书、文集、连续性出版物
+    - code: C6
+      name: 社会科学参考工具书
+    - code: [C7]
+      name: 社会科学文献检索工具书
+    - code: C8
+      name: 统计学
+    - code: C91
+      name: 社会学
+    - code: C92
+      name: 人口学
+    - code: C93
+      name: 管理学
+    - code: [C94]
+      name: 系统科学
+    - code: C95
+      name: 民族学
+    - code: C96
+      name: 人才学
+    - code: C97
+      name: 劳动科学
 - code: D
   name: 政治、法律
+  item:
+    - code: D0
+      name: 政治理论
+    - code: D1
+      name: 国际共产主义运动
+      item:
+        - code: [D10]
+          name: 共产主义运动理论
+        - code: D11
+          name: 共产主义运动初期（1846~1864年）
+        - code: D12
+          name: 第一国际（国际工人协会，1864~1876年）
+        - code: D13
+          name: 巴黎公社（1871年）
+        - code: D139
+          name: 第一国际解散后的共产主义运动（1877~1889年）
+        - code: D14
+          name: 第二国际（1889~1900年）
+          item:
+            - code: D141
+              name: 恩格斯领导下的第二国际
+            - code: D142
+              name: 列宁主义者与第二国际修正主义的斗争（1900~1914年）
+            - code: D143
+              name: 第二国际时期修正主义理论
+            - code: D145
+              name: 第二国际会议
+        - code: D15
+          name: 十月社会主义革命（1917年）
+        - code: D16
+          name: 共产国际（第三国际，1919年3月~1943年6月）
+        - code: D169
+          name: 托派
+        - code: D17
+          name: 共产党、工人党情报局（1947年9月~1956年4月）
+        - code: D18
+          name: 当代国际共产主义运动（1956年4月~）
+    - code: D2
+      name: 中国共产党
+    - code: D3
+      name: 3/37各国共产党
+    - code: D4
+      name: 工人、农民、青年、妇女运动与组织
+    - code: D5
+      name: 世界政治
+    - code: D6
+      name: 中国政治
+    - code: D7
+      name: 3/77各国政治
+    - code: D8
+      name: 外交、国际关系
+    - code: D9
+      name: 法律
+    - code: DF
+      name: 法律
 - code: E
   name: 军事
+  item:
+    - code: E0
+      name: 军事理论
+    - code: E1
+      name: 世界军事
+    - code: E2
+      name: 中国军事
+    - code: E3/7
+      name: 各国军事
+    - code: E8
+      name: 战略学、战役学、战术学
+    - code: E9
+      name: 军事技术
+    - code: E99
+      name: 军事地形学、军事地理学
 - code: F
   name: 经济
+  item:
+    - code: F0
+      name: 经济学
+    - code: F1
+      name: 世界各国经济概况、经济史、经济地理
+    - code: F2
+      name: 经济计划与管理
+    - code: F3
+      name: 农业经济
+    - code: F4
+      name: 工业经济
+    - code: F49
+      name: 信息产业经济（总论）
+    - code: F5
+      name: 交通运输经济
+    - code: F59
+      name: 旅游经济
+    - code: F6
+      name: 邮电经济
+    - code: F7
+      name: 贸易经济
+    - code: F8
+      name: 财政、金融
 - code: G
   name: 文化、科学、教育、体育
+  item:
+    - code: G0
+      name: 文化理论
+    - code: G1
+      name: 世界各国文化与文化事业
+    - code: G2
+      name: 信息与知识传播
+    - code: G3
+      name: 科学、科学研究
+    - code: G4
+      name: 教育
+    - code: G8
+      name: 体育
 - code: H
   name: 语言、文字
+  item:
+    - code: H0
+      name: 语言学
+    - code: H1
+      name: 汉语
+    - code: H2
+      name: 中国少数民族语言
+    - code: H3
+      name: 常用外国语
+    - code: H4
+      name: 汉藏语系
+    - code: H5
+      name: 阿尔泰语系（突厥-蒙古-通古斯语系）
+    - code: H61
+      name: 南亚语系（澳斯特罗-亚细亚语系）
+    - code: H62
+      name: 南印语系（达罗毗荼语系、德拉维达语系）
+    - code: H63
+      name: 南岛语系（马来亚-玻里尼西亚语系）
+    - code: H64
+      name: 东北亚诸语言
+    - code: H65
+      name: 高加索语系（伊比利亚-高加索语系）
+    - code: H66
+      name: 乌拉尔语系（芬兰-乌戈尔语系）
+    - code: H67
+      name: 闪-含语系（阿非罗-亚细亚语系）
+    - code: H7
+      name: 印欧语系
+    - code: H81
+      name: 非洲诸语言
+    - code: H83
+      name: 美洲诸语言
+    - code: H84
+      name: 大洋洲诸语言
+    - code: H9
+      name: 国际辅助语
 - code: I
   name: 文学
+  item:
+    - code: I0
+      name: 文学理论
+    - code: I1
+      name: 世界文学
+    - code: I2
+      name: 中国文学
+    - code: I3/7
+      name: 各国文学
 - code: J
   name: 艺术
+  item:
+    - code: J0
+      name: 艺术理论
+    - code: J1
+      name: 世界各国艺术概况
+    - code: J2
+      name: 绘画
+    - code: J2
+      name: 9书法、篆刻
+    - code: J3
+      name: 雕塑
+    - code: J4
+      name: 摄影艺术
+    - code: J5
+      name: 工艺美术
+    - code: [J59]
+      name: 建筑艺术
+    - code: J6
+      name: 音乐
+    - code: J7
+      name: 舞蹈
+    - code: J8
+      name: 戏剧艺术
+    - code: J9
+      name: 电影、电视艺术
 - code: K
   name: 历史、地理
+  item:
+    - code: K0
+      name: 史学理论
+    - code: K1
+      name: 世界史
+    - code: K2
+      name: 中国史
+    - code: K3
+      name: 亚洲史
+    - code: K4
+      name: 非洲史
+    - code: K5
+      name: 欧洲史
+    - code: K6
+      name: 大洋洲史
+    - code: K7
+      name: 美洲史
+    - code: K81
+      name: 传记
+    - code: K85
+      name: 文物考古
+    - code: K89
+      name: 风俗习惯
+    - code: K9
+      name: 地理
 - code: N
   name: 自然科学总论
+  item:
+    - code: N0
+      name: 自然科学理论与方法论
+    - code: N1
+      name: 自然科学现状及发展
+    - code: N2
+      name: 自然科学机构、团体、会议
+    - code: N3
+      name: 自然科学研究方法
+    - code: N4
+      name: 自然科学教育与普及
+    - code: N5
+      name: 自然科学丛书、文集、连续性出版物
+    - code: N6
+      name: 自然科学参考工具书
+    - code: [N7]
+      name: 自然科学文献检索工具
+    - code: N8
+      name: 自然科学调查、考察
+    - code: N91
+      name: 自然研究、自然历史
+    - code: N93
+      name: 非线性科学
+    - code: N94
+      name: 系统科学
+    - code: [N99]
+      name: 情报学、情报工作
 - code: O
   name: 数理科学和化学
+  item:
+    - code: O1
+      name: 数学
+    - code: O3
+      name: 力学
+    - code: O4
+      name: 物理学
+    - code: O6
+      name: 化学
+    - code: O7
+      name: 晶体学
 - code: P
   name: 天文学、地球科学
+  item:
+    - code: P1
+      name: 天文学
+    - code: P2
+      name: 测绘学
+    - code: P3
+      name: 地球物理学
+    - code: P4
+      name: 大气科学（气象学）
+    - code: P5
+      name: 地质学
+    - code: P7
+      name: 海洋学
+    - code: P9
+      name: 自然地理学
 - code: Q
   name: 生物科学
+  item:
+    - code: Q-0
+      name: 生物科学的理论与方法
+    - code: Q-1
+      name: 生物科学现状与发展
+    - code: Q-3
+      name: 生物科学的研究方法与技术
+    - code: Q-4
+      name: 生物科学教育与普及
+    - code: Q-9
+      name: 生物资源调查
+    - code: Q1
+      name: 普通生物学
+    - code: Q2
+      name: 细胞生物学
+    - code: Q3
+      name: 遗传学
+    - code: Q4
+      name: 生理学
+    - code: Q5
+      name: 生物化学
+    - code: Q6
+      name: 生物物理学
+    - code: Q7
+      name: 分子生物学
 - code: R
   name: 医药、卫生
+  item:
+    - code: R-0
+      name: 一般理论
+    - code: R-1
+      name: 现状与发展
+    - code: R-3
+      name: 医学研究方法
+    - code: R1
+      name: 预防医学、卫生学
+    - code: R2
+      name: 中国医学
+    - code: R3
+      name: 基础医学
+    - code: R4
+      name: 临床医学
+    - code: R5
+      name: 内科学
+    - code: R6
+      name: 外科学
+    - code: R71
+      name: 妇产科学
+    - code: R72
+      name: 儿科学
+    - code: R73
+      name: 肿瘤学
+    - code: R74
+      name: 神经病学与精神病学
+    - code: R75
+      name: 皮肤病学与性病学
+    - code: R76
+      name: 耳鼻咽喉科学
+    - code: R77
+      name: 眼科学
+    - code: R78
+      name: 口腔科学
+    - code: R79
+      name: 外国民族医学
+    - code: R8
+      name: 特种医学
+    - code: R9
+      name: 药学
 - code: S
   name: 农业科学
+  item:
+    - code: S-0
+      name: 一般性理论
+    - code: S-1
+      name: 农业科学技术现状与发展
+    - code: S-3
+      name: 农业科学研究、试验
+    - code: [S-9]
+      name: 农业经济
+    - code: S1
+      name: 农业基础科学
+    - code: S2
+      name: 农业工程
+    - code: S3
+      name: 农学（农艺学）
+    - code: S4
+      name: 植物保护
+    - code: S5
+      name: 农作物
+    - code: S6
+      name: 园艺
+    - code: S7
+      name: 林业
+    - code: S8
+      name: 畜牧、动物医学、狩猎、蚕、蜂
+    - code: S9
+      name: 水产、渔业
 - code: T
   name: 工业技术
+  item:
+    - code: T-0
+      name: 工业技术理论
+    - code: T-1
+      name: 工业技术现状与发展
+    - code: T-2
+      name: 机构、团体、会议
+    - code: T-6
+      name: 参考工具书
+    - code: [T-9]
+      name: 工业经济
+    - code: TB
+      name: 一般工业技术
+    - code: TD
+      name: 矿业工程
+    - code: TE
+      name: 石油、天然气工业
+    - code: TF
+      name: 冶金工业
+    - code: TG
+      name: 金属学与金属工艺
+    - code: TH
+      name: 机械、仪表工业
+    - code: TJ
+      name: 武器工业
+    - code: TK
+      name: 能源与动力工程
+    - code: TL
+      name: 原子能技术
+    - code: TM
+      name: 电工技术
+    - code: TN
+      name: 无线电电子学、电信技术
+    - code: TP
+      name: 自动化技术、计算机技术
+    - code: TQ
+      name: 化学工业
+    - code: TS
+      name: 轻工业、手工业
+    - code: TU
+      name: 建筑科学
+    - code: TV
+      name: 水利工程
 - code: U
   name: 交通运输
+  item:
+    - code: [U-9]
+      name: 交通运输经济
+    - code: U1
+      name: 综合运输
+    - code: U2
+      name: 铁路运输
+    - code: U4
+      name: 公路运输
+    - code: U6
+      name: 水路运输
+    - code: [U8]
+      name: 航空运输
 - code: V
   name: 航空、航天
+  item:
+    - code: V1
+      name: 航空、航天技术的研究与探索
+    - code: V2
+      name: 航空
+    - code: V4
+      name: 航天（宇宙航行）
+    - code: [V7]
+      name: 航空、航天医学
 - code: X
   name: 环境科学、安全科学
+  item:
+    - code: X-0
+      name: 环境科学理论
+    - code: X-1
+      name: 环境科学技术现状与发展
+    - code: X-4
+      name: 环境保护宣传教育及普及
+    - code: X-6
+      name: 环境保护参考工具书
+    - code: X1
+      name: 环境科学基础理论
+    - code: X2
+      name: 社会与环境
+    - code: X3
+      name: 环境保护管理
+    - code: X4
+      name: 灾害及其防治
+    - code: X5
+      name: 环境污染及其防治
+    - code: X7
+      name: 废物处理与综合利用
+    - code: X8
+      name: 环境质量评价与环境监测
+    - code: X9
+      name: 安全科学
 - code: Z
   name: 综合性图书
   item:
