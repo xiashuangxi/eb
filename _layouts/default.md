@@ -80,12 +80,44 @@
 			text-align: center;
 		}
 
+		.title {
+			margin: 0px 0px 10px 0px;display: grid;grid-auto-flow: column;width: 100%;
+		}
+		.title .title_text {
+			font-size: 25px;
+		}
+		.title .search_content {
+			justify-self: end;display: inline-flex;align-items: flex-end;
+		}
+		.search_content .input {
+			font-size: 12px;
+			height: 21px;border: 1px solid black;padding: 0 2px;margin-right: 2px;width: 300px;
+		}
+
+		.search_content .button {
+			cursor: pointer;
+			height: 23px;border: 1px solid black;background-color: black;color: white;font-size: 12px;justify-self: juu;
+		}
+		.search_content .button:hover {
+			background-color: white;
+			color: black;
+		}
 		sup {
 			padding: 0 4px;
 		}
 	</style>
 	</head>
 	<body>
+		<div class="title">
+			<div class="title_text">个人图书馆</div>
+			<div class="search_content">
+				<form onsubmit="return do_search()" submit="" method="post">
+					<input id="search_text" class="input" onkeyup="do_search()" name="input" type="text" placeholder="ISBN / 书名 / 作者 / 出版社 / 分类 / 分类代码 / 译者">
+					<input type="submit" class="button" value="查找" />
+				</form>
+			</div>
+		</div>
+
 		<div id="classify_content" class="classify"></div>
 		<div id="books" class="books"></div>
 		<div class="footer">
@@ -115,10 +147,20 @@
 				init_classify(obj[i].item,"child")
 			} 
 			html = html + "</"+t+">";
-
 		}
-		
 	}
+
+	var do_search = function() {
+		var in_t = document.getElementById("search_text").value;
+		if (in_t.length > 0){
+			document.location.href="#search/"+document.getElementById("search_text").value;
+		} else {
+			document.getElementById("search_text").value = "";
+			document.location.href="#";
+		}
+		return false
+	}
+
 	init_classify(JSON.parse(classify),"root");
 	document.getElementById("classify_content").innerHTML = html;
 	document.getElementById("books").innerHTML = html;
