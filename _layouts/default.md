@@ -221,7 +221,7 @@
 
 			var book = books[i][0];
 			var book_title = document.createElement('div');
-			book_title.innerHTML ="<a href='/eb/info.html/#isbn/"+book.isbn+"' title='"+book.name+"'>"+ book.name + "</a>";
+			book_title.innerHTML ="<a href='/eb/info.html#isbn/"+book.isbn+"' title='"+book.name+"'>"+ book.name + "</a>";
 			li.appendChild(book_title);
 		}
 		
