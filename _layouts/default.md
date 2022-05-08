@@ -1,3 +1,6 @@
+{% capture namespace %}
+{% if site.github.pages_hostname == 'github.io'%}/{{site.github.repository_name}}{% endif %}
+{% endcapture %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -101,7 +104,7 @@
 	</head>
 	<body>
 		<div class="title" aria-region="true" aria-regiontype="2" tabindex="0">
-			<div class="title_text"><a href="/index.html">个人图书馆</a></div>
+			<div class="title_text"><a href="{{namespace}}/index.html">个人图书馆</a></div>
 			<!-- <div class="search_content">
 				<form onsubmit="return do_search()" submit="" method="post">
 					<input id="search_text" class="input" onkeyup="do_search()" name="input" type="text" placeholder="ISBN / 书名 / 作者 / 出版社 / 分类 / 分类代码 / 译者">
@@ -218,7 +221,7 @@
 
 			var book = books[i][0];
 			var book_title = document.createElement('div');
-			book_title.innerHTML ="<a href='/info.html/#isbn/"+book.isbn+"' title='"+book.name+"'>"+ book.name + "</a>";
+			book_title.innerHTML ="<a href='{{namespace}}/info.html/#isbn/"+book.isbn+"' title='"+book.name+"'>"+ book.name + "</a>";
 			li.appendChild(book_title);
 		}
 		
@@ -261,7 +264,7 @@
 				edition_el.innerHTML = '<div style="width:60px; font-weight:bold; text-align: right;margin-right:5px">版次:</div><div>'+(book.edition ? book.edition : "")+'</div>'
 
 				var btn_el = document.createElement('div');
-				btn_el.innerHTML = '<a class="download_button" href="/">返回</a><a target="_block" class="download_button" href="'+book.url+'">下载</a>';
+				btn_el.innerHTML = '<a class="download_button" href="{{namespace}}">返回</a><a target="_block" class="download_button" href="'+book.url+'">下载</a>';
 
 				var container = document.getElementById('container');
 				container.appendChild(name_el);
