@@ -209,9 +209,6 @@
 	var show_books = function() {
 		var ul = document.createElement('ul');
 		//padding: 0px; display: grid;justify-content: start;align-items: start;justify-items: start;grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-		// ul.style.padding='0';
-		// ul.style.display='grid';
-		// ul.style.grid
 		ul.setAttribute("style", "padding: 0px; display: grid;justify-content: start;align-items: start;justify-items: start;grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));");
 
 		for (var i = books.length - 1; i >= 0; i--) {
